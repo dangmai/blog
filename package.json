@@ -36,6 +36,7 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "prettier": "^1.18.2"
   },
   "homepage": "https://github.com/dangmai/blog#readme",
@@ -54,6 +55,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests!\""
+    "test": "echo \"Write tests!\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   }
 }
